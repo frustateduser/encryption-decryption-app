@@ -13,5 +13,5 @@ will be added in future your suggestions are welcome.
 
 
 Here are some screenshort📷 of the app:
-<img src="Screenshot1.png">
-<img src="Screenshot2.png">
+<img src="img/Screenshot1.png">
+<img src="img/Screenshot2.png">
