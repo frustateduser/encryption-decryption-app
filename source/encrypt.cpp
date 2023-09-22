@@ -11,7 +11,7 @@ public:
 };
 
 void encrypt::cipher(){
-    cout<<"\n\nenter numeric key: \n\n";
+    cout<<"\n\nenter numeric key between 0-26: \n\n";
     cin>>key;
     cout<<"\n\nenter text you want to encrypt:\n \n";
     cin>>text;
