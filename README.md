@@ -13,5 +13,13 @@ will be added in future your suggestions are welcome.
 
 
 Here are some screenshort📷 of the app:
+<br>
+<figure>
 <img src="img/Screenshot1.png">
+<figcaption> encryption</figcaption>
+</figure>
+
+<figure>
 <img src="img/Screenshot2.png">
+<figcaption> decryption</figcaption>
+</figure>
