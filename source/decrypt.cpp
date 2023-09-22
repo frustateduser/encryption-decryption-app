@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 class decrypt
 {
@@ -11,13 +11,16 @@ public:
 };
 
 void decrypt::decipher(){
-    cout<<"\n\nenter key single digit: \n\n";
+    cout<<"\n\nenter numeric key: \n\n";
     cin>>key;
-    cout<<"\n\nenter cipher text lower case only: \n\n";
+    cout<<"\n\nenter cipher text: \n\n";
     cin>>text;
 
     for(int i=0;i<text.length();i++){
-        text[i]=text[i]-key;
+        if (isupper(text[i])){
+            text[i]=tolower(text[i]);
+        }
+        text[i]=char(int(text[i]+(26-key) -97)%26+97);
     }
     cout<<"\n\ndecrypted text: \n\n"<<text<<"\n\nyour message is decrypted enjoy! reading your private message\n\n";
 
