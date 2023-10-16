@@ -14,9 +14,13 @@ void decrypt::decipher(){
     cout<<"\n\nenter numeric key: \n\n";
     cin>>key;
     cout<<"\n\nenter cipher text: \n\n";
-    cin>>text;
+    cin.ignore();
+    getline(cin,text);
 
     for(int i=0;i<text.length();i++){
+        if(text[i] == ' '){
+            continue;
+        }
         if (isupper(text[i])){
             text[i]=tolower(text[i]);
         }

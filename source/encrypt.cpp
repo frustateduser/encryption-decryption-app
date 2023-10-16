@@ -14,9 +14,13 @@ void encrypt::cipher(){
     cout<<"\n\nenter numeric key between 0-26: \n\n";
     cin>>key;
     cout<<"\n\nenter text you want to encrypt:\n \n";
-    cin>>text;
+    cin.ignore();
+    getline(cin,text);
 
     for(int i=0;i<text.length();i++){
+        if(text[i] == ' '){
+            continue;
+        }
         if (isupper(text[i])){
             text[i]=tolower(text[i]);
         }
