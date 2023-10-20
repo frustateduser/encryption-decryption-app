@@ -24,7 +24,12 @@ void encrypt::cipher(){
         if (isupper(text[i])){
             text[i]=tolower(text[i]);
         }
+        if(isdigit(text[i])  || ispunct(text[i])  || isspace(text[i]) || isblank(text[i])){
+            continue;
+        }
+        else{
         text[i]=char(int(text[i]+key -97)%26+97);
+        }
     }
     cout<<"\n\nencrypted text: \n"<<text<<"\n\n your message is safe now!!!\n\n";
 
