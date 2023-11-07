@@ -24,7 +24,12 @@ void decrypt::decipher(){
         if (isupper(text[i])){
             text[i]=tolower(text[i]);
         }
+        if(isdigit(text[i])  || ispunct(text[i])  || isspace(text[i]) || isblank(text[i])){
+            continue;
+        }
+        else{
         text[i]=char(int(text[i]+(26-key) -97)%26+97);
+        }
     }
     cout<<"\n\ndecrypted text: \n\n"<<text<<"\n\nyour message is decrypted enjoy! reading your private message\n\n";
 
